@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		336125A21C278E4C00B2F492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125A11C278E4C00B2F492 /* AppDelegate.swift */; };
-		336125A41C278E4C00B2F492 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125A31C278E4C00B2F492 /* ViewController.swift */; };
 		336125A71C278E4C00B2F492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336125A51C278E4C00B2F492 /* Main.storyboard */; };
 		336125A91C278E4C00B2F492 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336125A81C278E4C00B2F492 /* Images.xcassets */; };
 		336125AC1C278E4C00B2F492 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336125AA1C278E4C00B2F492 /* LaunchScreen.xib */; };
 		336125B81C278E4C00B2F492 /* WavyleafResearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125B71C278E4C00B2F492 /* WavyleafResearchTests.swift */; };
+		336125CC1C278EDF00B2F492 /* ResearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125CB1C278EDF00B2F492 /* ResearchViewController.swift */; };
+		336125D01C27907300B2F492 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125CF1C27907300B2F492 /* SurveyTask.swift */; };
+		336125D31C2790E300B2F492 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125D21C2790E300B2F492 /* ConsentTask.swift */; };
+		336125D51C27911300B2F492 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125D41C27911300B2F492 /* ConsentDocument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +26,37 @@
 			remoteGlobalIDString = 3361259B1C278E4C00B2F492;
 			remoteInfo = WavyleafResearch;
 		};
+		336125C71C278E7600B2F492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		336125C91C278E7600B2F492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3361259C1C278E4C00B2F492 /* WavyleafResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WavyleafResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336125A01C278E4C00B2F492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		336125A11C278E4C00B2F492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		336125A31C278E4C00B2F492 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		336125A61C278E4C00B2F492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		336125A81C278E4C00B2F492 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		336125AB1C278E4C00B2F492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		336125B11C278E4C00B2F492 /* WavyleafResearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WavyleafResearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		336125B61C278E4C00B2F492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		336125B71C278E4C00B2F492 /* WavyleafResearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavyleafResearchTests.swift; sourceTree = "<group>"; };
+		336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Downloads/ResearchKit-cb001e2f4e781740bc3a3c6dc494ddfbd97cffea/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		336125CB1C278EDF00B2F492 /* ResearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchViewController.swift; sourceTree = "<group>"; };
+		336125CF1C27907300B2F492 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		336125D21C2790E300B2F492 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		336125D41C27911300B2F492 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +80,7 @@
 		336125931C278E4C00B2F492 = {
 			isa = PBXGroup;
 			children = (
+				336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */,
 				3361259E1C278E4C00B2F492 /* WavyleafResearch */,
 				336125B41C278E4C00B2F492 /* WavyleafResearchTests */,
 				3361259D1C278E4C00B2F492 /* Products */,
@@ -77,8 +99,10 @@
 		3361259E1C278E4C00B2F492 /* WavyleafResearch */ = {
 			isa = PBXGroup;
 			children = (
+				336125D11C2790D200B2F492 /* Consent */,
+				336125CE1C27905E00B2F492 /* Survey */,
 				336125A11C278E4C00B2F492 /* AppDelegate.swift */,
-				336125A31C278E4C00B2F492 /* ViewController.swift */,
+				336125CB1C278EDF00B2F492 /* ResearchViewController.swift */,
 				336125A51C278E4C00B2F492 /* Main.storyboard */,
 				336125A81C278E4C00B2F492 /* Images.xcassets */,
 				336125AA1C278E4C00B2F492 /* LaunchScreen.xib */,
@@ -110,6 +134,32 @@
 				336125B61C278E4C00B2F492 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		336125C21C278E7600B2F492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				336125C81C278E7600B2F492 /* ResearchKit.framework */,
+				336125CA1C278E7600B2F492 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		336125CE1C27905E00B2F492 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				336125CF1C27907300B2F492 /* SurveyTask.swift */,
+			);
+			name = Survey;
+			sourceTree = "<group>";
+		};
+		336125D11C2790D200B2F492 /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				336125D21C2790E300B2F492 /* ConsentTask.swift */,
+				336125D41C27911300B2F492 /* ConsentDocument.swift */,
+			);
+			name = Consent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +229,12 @@
 			mainGroup = 336125931C278E4C00B2F492;
 			productRefGroup = 3361259D1C278E4C00B2F492 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 336125C21C278E7600B2F492 /* Products */;
+					ProjectRef = 336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3361259B1C278E4C00B2F492 /* WavyleafResearch */,
@@ -186,6 +242,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		336125C81C278E7600B2F492 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 336125C71C278E7600B2F492 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		336125CA1C278E7600B2F492 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 336125C91C278E7600B2F492 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3361259A1C278E4C00B2F492 /* Resources */ = {
@@ -212,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336125A41C278E4C00B2F492 /* ViewController.swift in Sources */,
 				336125A21C278E4C00B2F492 /* AppDelegate.swift in Sources */,
+				336125D31C2790E300B2F492 /* ConsentTask.swift in Sources */,
+				336125CC1C278EDF00B2F492 /* ResearchViewController.swift in Sources */,
+				336125D01C27907300B2F492 /* SurveyTask.swift in Sources */,
+				336125D51C27911300B2F492 /* ConsentDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +487,7 @@
 				336125BD1C278E4C00B2F492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		336125BE1C278E4C00B2F492 /* Build configuration list for PBXNativeTarget "WavyleafResearchTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +496,7 @@
 				336125C01C278E4C00B2F492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
