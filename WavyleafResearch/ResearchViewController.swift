@@ -47,16 +47,15 @@ extension ResearchViewController : ORKTaskViewControllerDelegate
         {
             if consentTaskViewController != nil && consentTaskViewController == taskViewController
             {
-                // Writing data into Consent.pdf file
                 let taskResult = taskViewController.result
                 //ConsentDocumentParticipantSignature
                 var signatureResult : ORKConsentSignatureResult = taskResult.stepResultForStepIdentifier("ConsentReviewStep")?.firstResult as! ORKConsentSignatureResult
                 let document = ConsentDocument.copy() as! ORKConsentDocument
                 signatureResult.applyToDocument(document)
                 document.makePDFWithCompletionHandler({ (pdfData:NSData?, error: NSError?) -> Void in
-                    var docURL = (NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)).last as? NSURL
+                    var docURL = (NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)).last as NSURL!
                     docURL = docURL?.URLByAppendingPathComponent( "Consent.pdf")
-                    println("This is doc URL " + String(stringInterpolationSegment: docURL))
+                    print("This is doc URL " + String(stringInterpolationSegment: docURL))
                     //write file to the disk.
                     pdfData?.writeToURL(docURL!, atomically: true)
                     //now you can see that pdf in your applications directory
@@ -66,9 +65,9 @@ extension ResearchViewController : ORKTaskViewControllerDelegate
             if surveyTaskViewController != nil && surveyTaskViewController == taskViewController
             {
                 // Store Survey
-                let data = NSKeyedArchiver.archivedDataWithRootObject(taskViewController.result)
-                let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] .stringByAppendingPathComponent("Survey")
-                data.writeToFile(documentsPath, atomically: false)
+                //let data = NSKeyedArchiver.archivedDataWithRootObject(taskViewController.result)
+                //let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] .stringByAppendingPathComponent("Survey")
+                //data.writeToFile(documentsPath, atomically: false)
             }
         }
     }
