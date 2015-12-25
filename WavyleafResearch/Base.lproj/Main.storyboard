@@ -16,22 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="SBt-8g-dP4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79U-R5-89t">
-                                <rect key="frame" x="185.5" y="285" width="230" height="30"/>
-                                <state key="normal" title="Start Wavyleaf Research Example">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startDemo:" destination="MrS-gx-3r9" eventType="touchUpInside" id="eEk-UG-HYA"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="79U-R5-89t" secondAttribute="centerX" constant="-0.5" id="2PP-ob-sHj"/>
-                            <constraint firstAttribute="centerY" secondItem="79U-R5-89t" secondAttribute="centerY" id="f9W-4z-Qn3"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wta-fB-kTl" userLabel="First Responder" sceneMemberID="firstResponder"/>

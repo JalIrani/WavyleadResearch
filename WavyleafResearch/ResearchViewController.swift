@@ -18,14 +18,15 @@ class ResearchViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    //Starting Consent Controller
-    @IBAction func startDemo(sender: AnyObject) {
+    //Defaulting for the Consent form to appear when the view is visible (aka all the time
+    //for demo purposes)
+    override func viewDidAppear(animated: Bool) {
         consentTaskViewController = ORKTaskViewController(task: ConsentTask, taskRunUUID: nil)
         consentTaskViewController.delegate = self
         presentViewController(consentTaskViewController, animated: true, completion: nil)
     }
     
-    //Present the survey portion
+    //Present the survey portion, if needed
     func presentSurvey() {
         surveyTaskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
         surveyTaskViewController.delegate = self
