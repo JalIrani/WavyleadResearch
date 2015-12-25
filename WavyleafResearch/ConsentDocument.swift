@@ -14,22 +14,22 @@ public var ConsentDocument: ORKConsentDocument
     let consentDocument = ORKConsentDocument()
     consentDocument.title = "Consent"
     
-    //TODO: consent sections
+    //Can put anything in here
     let consentSectionTypes: [ORKConsentSectionType] = [
         .Overview,
         .DataGathering,
-        .Privacy,
+        //.Privacy,
         .DataUse,
-        .TimeCommitment,
+        //.TimeCommitment,
         .StudySurvey,
-        .StudyTasks,
-        .Withdrawing
+        .StudyTasks
+        //.Withdrawing
     ]
     
-    var consentSections: [ORKConsentSection] = consentSectionTypes.map { contentSectionType in
+    let consentSections: [ORKConsentSection] = consentSectionTypes.map { contentSectionType in
         let consentSection = ORKConsentSection(type: contentSectionType)
         consentSection.summary = "If you wish to complete this study..."
-        consentSection.content = "In this study you will be asked six questions. You will also have your voice recorded for five seconds."
+        consentSection.content = "Dr. Beauchamp can fill this part in"
         return consentSection
     }
     

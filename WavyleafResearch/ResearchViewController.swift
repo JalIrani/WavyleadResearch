@@ -25,6 +25,7 @@ class ResearchViewController: UIViewController {
         presentViewController(consentTaskViewController, animated: true, completion: nil)
     }
     
+    //Present the survey portion
     func presentSurvey() {
         surveyTaskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)
         surveyTaskViewController.delegate = self
@@ -37,19 +38,19 @@ class ResearchViewController: UIViewController {
     }
 }
 
-extension ResearchViewController : ORKTaskViewControllerDelegate
-{
-    func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?)
-    {
+extension ResearchViewController : ORKTaskViewControllerDelegate {
+    func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
+        
         //let data = NSKeyedArchiver.archivedDataWithRootObject(taskViewController.result)
         taskViewController.dismissViewControllerAnimated(true, completion: nil)
-        if reason != ORKTaskViewControllerFinishReason.Discarded
-        {
-            if consentTaskViewController != nil && consentTaskViewController == taskViewController
-            {
+        
+        //When a View controller closes, this delegate is called
+        if reason != ORKTaskViewControllerFinishReason.Discarded {
+            if consentTaskViewController != nil && consentTaskViewController == taskViewController {
+                
                 let taskResult = taskViewController.result
                 //ConsentDocumentParticipantSignature
-                var signatureResult : ORKConsentSignatureResult = taskResult.stepResultForStepIdentifier("ConsentReviewStep")?.firstResult as! ORKConsentSignatureResult
+                let signatureResult : ORKConsentSignatureResult = taskResult.stepResultForStepIdentifier("ConsentReviewStep")?.firstResult as! ORKConsentSignatureResult
                 let document = ConsentDocument.copy() as! ORKConsentDocument
                 signatureResult.applyToDocument(document)
                 document.makePDFWithCompletionHandler({ (pdfData:NSData?, error: NSError?) -> Void in
@@ -60,7 +61,8 @@ extension ResearchViewController : ORKTaskViewControllerDelegate
                     pdfData?.writeToURL(docURL!, atomically: true)
                     //now you can see that pdf in your applications directory
                 })
-                presentSurvey()
+                //If there were survey questions to ask, just consent for now
+                //presentSurvey()
             }
             if surveyTaskViewController != nil && surveyTaskViewController == taskViewController
             {
