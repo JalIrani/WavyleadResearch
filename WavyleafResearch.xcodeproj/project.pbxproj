@@ -11,7 +11,6 @@
 		336125A71C278E4C00B2F492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 336125A51C278E4C00B2F492 /* Main.storyboard */; };
 		336125A91C278E4C00B2F492 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 336125A81C278E4C00B2F492 /* Images.xcassets */; };
 		336125AC1C278E4C00B2F492 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336125AA1C278E4C00B2F492 /* LaunchScreen.xib */; };
-		336125B81C278E4C00B2F492 /* WavyleafResearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125B71C278E4C00B2F492 /* WavyleafResearchTests.swift */; };
 		336125CC1C278EDF00B2F492 /* ResearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125CB1C278EDF00B2F492 /* ResearchViewController.swift */; };
 		336125D01C27907300B2F492 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125CF1C27907300B2F492 /* SurveyTask.swift */; };
 		336125D31C2790E300B2F492 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336125D21C2790E300B2F492 /* ConsentTask.swift */; };
@@ -19,13 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		336125B21C278E4C00B2F492 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 336125941C278E4C00B2F492 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3361259B1C278E4C00B2F492;
-			remoteInfo = WavyleafResearch;
-		};
 		336125C71C278E7600B2F492 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */;
@@ -49,9 +41,6 @@
 		336125A61C278E4C00B2F492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		336125A81C278E4C00B2F492 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		336125AB1C278E4C00B2F492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		336125B11C278E4C00B2F492 /* WavyleafResearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WavyleafResearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		336125B61C278E4C00B2F492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		336125B71C278E4C00B2F492 /* WavyleafResearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavyleafResearchTests.swift; sourceTree = "<group>"; };
 		336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../Downloads/ResearchKit-cb001e2f4e781740bc3a3c6dc494ddfbd97cffea/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 		336125CB1C278EDF00B2F492 /* ResearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchViewController.swift; sourceTree = "<group>"; };
 		336125CF1C27907300B2F492 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
@@ -67,13 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		336125AE1C278E4C00B2F492 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +64,6 @@
 			children = (
 				336125C11C278E7600B2F492 /* ResearchKit.xcodeproj */,
 				3361259E1C278E4C00B2F492 /* WavyleafResearch */,
-				336125B41C278E4C00B2F492 /* WavyleafResearchTests */,
 				3361259D1C278E4C00B2F492 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				3361259C1C278E4C00B2F492 /* WavyleafResearch.app */,
-				336125B11C278E4C00B2F492 /* WavyleafResearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,23 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				336125A01C278E4C00B2F492 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		336125B41C278E4C00B2F492 /* WavyleafResearchTests */ = {
-			isa = PBXGroup;
-			children = (
-				336125B71C278E4C00B2F492 /* WavyleafResearchTests.swift */,
-				336125B51C278E4C00B2F492 /* Supporting Files */,
-			);
-			path = WavyleafResearchTests;
-			sourceTree = "<group>";
-		};
-		336125B51C278E4C00B2F492 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				336125B61C278E4C00B2F492 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -182,24 +145,6 @@
 			productReference = 3361259C1C278E4C00B2F492 /* WavyleafResearch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		336125B01C278E4C00B2F492 /* WavyleafResearchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 336125BE1C278E4C00B2F492 /* Build configuration list for PBXNativeTarget "WavyleafResearchTests" */;
-			buildPhases = (
-				336125AD1C278E4C00B2F492 /* Sources */,
-				336125AE1C278E4C00B2F492 /* Frameworks */,
-				336125AF1C278E4C00B2F492 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				336125B31C278E4C00B2F492 /* PBXTargetDependency */,
-			);
-			name = WavyleafResearchTests;
-			productName = WavyleafResearchTests;
-			productReference = 336125B11C278E4C00B2F492 /* WavyleafResearchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,15 +152,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jal Irani";
 				TargetAttributes = {
 					3361259B1C278E4C00B2F492 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					336125B01C278E4C00B2F492 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 3361259B1C278E4C00B2F492;
 					};
 				};
 			};
@@ -239,7 +180,6 @@
 			projectRoot = "";
 			targets = (
 				3361259B1C278E4C00B2F492 /* WavyleafResearch */,
-				336125B01C278E4C00B2F492 /* WavyleafResearchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,13 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		336125AF1C278E4C00B2F492 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,23 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		336125AD1C278E4C00B2F492 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				336125B81C278E4C00B2F492 /* WavyleafResearchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		336125B31C278E4C00B2F492 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3361259B1C278E4C00B2F492 /* WavyleafResearch */;
-			targetProxy = 336125B21C278E4C00B2F492 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		336125A51C278E4C00B2F492 /* Main.storyboard */ = {
@@ -353,6 +270,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -421,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WavyleafResearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.Towson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -431,41 +350,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WavyleafResearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.Towson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		336125BF1C278E4C00B2F492 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WavyleafResearchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WavyleafResearch.app/WavyleafResearch";
-			};
-			name = Debug;
-		};
-		336125C01C278E4C00B2F492 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WavyleafResearchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WavyleafResearch.app/WavyleafResearch";
 			};
 			name = Release;
 		};
@@ -486,15 +372,6 @@
 			buildConfigurations = (
 				336125BC1C278E4C00B2F492 /* Debug */,
 				336125BD1C278E4C00B2F492 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		336125BE1C278E4C00B2F492 /* Build configuration list for PBXNativeTarget "WavyleafResearchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				336125BF1C278E4C00B2F492 /* Debug */,
-				336125C01C278E4C00B2F492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
